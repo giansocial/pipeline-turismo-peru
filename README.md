@@ -1,23 +1,21 @@
-# Pipeline Turismo - Peru
+# Pipeline Turismo - Perú
 
-Soy Gian Cruz.
+¿Sabías que Perú recibió 4.4 millones de turistas internacionales en 2019, pero en 2020 esa cifra se desplomó a menos de 900 mil? El turismo representaba el 3.9% del PBI y generaba más de 1.3 millones de empleos. La pandemia no solo cortó el flujo de visitantes, cambió por completo la composición de mercados emisores.
 
-Pipeline de datos que analiza el flujo de turistas internacionales al Peru. Procesa estadisticas de arribo por pais de origen, calcula estacionalidad, participacion de mercado y mide el impacto del COVID-19 en el sector. Los datos provienen del portal estadistico del MINCETUR.
+Soy Gian Cruz. Construí este pipeline para analizar los datos de arribo de turistas publicados por el MINCETUR. Calcula estacionalidad, participación de mercado por país, mide el impacto real del COVID-19 y genera un índice de recuperación post-pandemia comparando cada período contra la línea base de 2019.
 
-Peru recibio 4.4 millones de turistas internacionales en 2019. En 2020 ese numero cayo a menos de 900 mil. Este proyecto mide la caida, la recuperacion y los cambios en la composicion de mercados emisores.
-
-## Que hace
+## Qué hace
 
 - Carga datos de arribo de turistas desde CSVs (exportaciones MINCETUR)
-- Limpieza: normaliza paises, parsea numeros con comas, elimina duplicados
-- Calcula crecimiento interanual (YoY) por pais
-- Genera indice de estacionalidad mensual
-- Calcula participacion de mercado por pais/anio
-- Mide impacto COVID: caida 2020 vs promedio 2018-2019
-- Genera indice de recuperacion post-COVID (base 2019)
+- Limpieza: normaliza países, parsea números con comas, elimina duplicados
+- Calcula crecimiento interanual (YoY) por país
+- Genera índice de estacionalidad mensual
+- Calcula participación de mercado por país/año
+- Mide impacto COVID: caída 2020 vs promedio 2018-2019
+- Genera índice de recuperación post-COVID (base 2019)
 - Carga a warehouse SQLite con esquema estrella
 
-## Instalacion
+## Instalación
 
 ```bash
 python -m venv venv
@@ -84,8 +82,8 @@ Peru received 4.4 million international tourists in 2019. In 2020 that number dr
 
 ## Fuentes de datos
 
-| Fuente | Descripcion | Enlace |
+| Fuente | Descripción | Enlace |
 |--------|-------------|--------|
-| MINCETUR - Estadisticas de Turismo | Arribo mensual de turistas internacionales por pais de origen | [https://www.mincetur.gob.pe/turismo/estadisticas-generales/](https://www.mincetur.gob.pe/turismo/estadisticas-generales/) |
-| DATATUR MINCETUR | Sistema de informacion estadistica de turismo | [https://dataturismo.mincetur.gob.pe/](https://dataturismo.mincetur.gob.pe/) |
-| PROMPERU - Perfil del Turista Extranjero | Caracteristicas del turista extranjero que visita Peru | [https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt](https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt) |
+| MINCETUR - Estadísticas de Turismo | Arribo mensual de turistas internacionales por país de origen | [https://www.mincetur.gob.pe/turismo/estadisticas-generales/](https://www.mincetur.gob.pe/turismo/estadisticas-generales/) |
+| DATATUR MINCETUR | Sistema de información estadística de turismo | [https://dataturismo.mincetur.gob.pe/](https://dataturismo.mincetur.gob.pe/) |
+| PROMPERÚ - Perfil del Turista Extranjero | Características del turista extranjero que visita Perú | [https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt](https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt) |
