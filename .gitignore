@@ -5,11 +5,15 @@ venv/
 .venv/
 .env
 data/raw/*.csv
-data/processed/
+data/processed/*
+!data/processed/.gitkeep
+data/warehouse/*
+!data/warehouse/.gitkeep
 data/*.db
 logs/
 *.log
 .pytest_cache/
 htmlcov/
 .coverage
+*.ipynb_checkpoints/
 .DS_Store
