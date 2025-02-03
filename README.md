@@ -78,6 +78,16 @@ pipeline-turismo-peru/
 | DATATUR MINCETUR | Sistema de información estadística de turismo | [https://dataturismo.mincetur.gob.pe/](https://dataturismo.mincetur.gob.pe/) |
 | PROMPERÚ - Perfil del Turista Extranjero | Características del turista extranjero que visita Perú | [https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt](https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt) |
 
+## Visualizaciones
+
+Resultados del analisis exploratorio (notebook completo en `notebooks/`):
+
+![Arribos mensuales con impacto COVID](docs/images/grafico_01.png)
+
+![Participacion de mercado por pais emisor](docs/images/grafico_02.png)
+
+![Indice de estacionalidad mensual](docs/images/grafico_03.png)
+
 ## Licencia
 
 MIT
