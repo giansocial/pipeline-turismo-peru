@@ -70,16 +70,6 @@ pipeline-turismo-peru/
 └── requirements.txt
 ```
 
----
-
-## What it does
-
-Data pipeline analyzing international tourist arrivals to Peru. Processes arrival statistics by country of origin, calculates seasonality, market share, and measures COVID-19 impact on tourism. Data comes from MINCETUR statistical portal.
-
-Peru received 4.4 million international tourists in 2019. In 2020 that number dropped to less than 900k. This project measures the decline, recovery, and changes in source market composition.
-
----
-
 ## Fuentes de datos
 
 | Fuente | Descripción | Enlace |
@@ -87,3 +77,36 @@ Peru received 4.4 million international tourists in 2019. In 2020 that number dr
 | MINCETUR - Estadísticas de Turismo | Arribo mensual de turistas internacionales por país de origen | [https://www.mincetur.gob.pe/turismo/estadisticas-generales/](https://www.mincetur.gob.pe/turismo/estadisticas-generales/) |
 | DATATUR MINCETUR | Sistema de información estadística de turismo | [https://dataturismo.mincetur.gob.pe/](https://dataturismo.mincetur.gob.pe/) |
 | PROMPERÚ - Perfil del Turista Extranjero | Características del turista extranjero que visita Perú | [https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt](https://www.promperu.gob.pe/TurismoIn/sitio/PerfTuristaExt) |
+
+## Licencia
+
+MIT
+
+---
+
+# Tourism Pipeline - Peru
+
+Did you know Peru received 4.4 million international tourists in 2019, but in 2020 that number plummeted to less than 900,000? Tourism represented 3.9% of GDP and generated over 1.3 million jobs. The pandemic didn't just cut visitor flow, it completely changed the composition of source markets.
+
+I'm Gian Cruz. I built this pipeline to analyze tourist arrival data published by Peru's MINCETUR. It calculates seasonality indices, market share by country, measures the real COVID-19 impact, and generates a post-pandemic recovery index comparing each period against the 2019 baseline.
+
+## Quick start
+
+```bash
+git clone https://github.com/giansocial/pipeline-turismo-peru.git
+cd pipeline-turismo-peru
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+python -m src.pipeline
+```
+
+## Data sources
+
+| Source | Description | Link |
+|--------|-------------|------|
+| MINCETUR - Tourism Statistics | Monthly international tourist arrivals by country | [https://www.mincetur.gob.pe/turismo/estadisticas-generales/](https://www.mincetur.gob.pe/turismo/estadisticas-generales/) |
+| DATATUR MINCETUR | Tourism statistical information system | [https://dataturismo.mincetur.gob.pe/](https://dataturismo.mincetur.gob.pe/) |
+
+## License
+
+MIT
