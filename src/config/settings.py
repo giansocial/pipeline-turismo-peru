@@ -16,33 +16,10 @@ for _d in (RAW_DIR, PROCESSED_DIR, LOG_DIR):
 
 DB_PATH = DATA_DIR / "turismo.db"
 
-MINCETUR_STATS_URL = (
-    "https://www.mincetur.gob.pe/turismo/estadisticas-generales/"
-)
-DATATUR_URL = "https://dataturismo.mincetur.gob.pe/"
-
 PAISES_TOP = [
     "Estados Unidos", "Chile", "Ecuador", "Colombia", "Argentina",
     "Brasil", "Espana", "Francia", "Alemania", "Reino Unido",
     "Mexico", "Canada", "Bolivia", "Japon", "Italia",
 ]
-
-PUNTOS_ENTRADA = [
-    "Aeropuerto Jorge Chavez",
-    "Santa Rosa (Tacna)",
-    "Desaguadero (Puno)",
-    "Aguas Verdes (Tumbes)",
-    "Aeropuerto Cusco",
-    "Puerto del Callao",
-]
-
-REGIONES = [
-    "Lima", "Cusco", "Arequipa", "Puno", "Tacna",
-    "Piura", "La Libertad", "Lambayeque", "Ica", "Junin",
-    "Loreto", "Madre de Dios", "Ancash", "Cajamarca", "San Martin",
-]
-
-ANIO_INICIO = 2015
-ANIO_FIN = 2023
 
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO")
