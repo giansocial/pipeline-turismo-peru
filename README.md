@@ -6,20 +6,9 @@ Soy Gian Cruz. Revisando las estadísticas del MINCETUR encontré que publican d
 
 Lo que hice fue construir un pipeline que carga esos datos, los limpia, calcula crecimiento interanual por país, genera un índice de estacionalidad mensual, mide participación de mercado por país y año, y crea un índice de recuperación COVID comparando cada período contra la línea base de 2019. Todo se carga en un warehouse SQLite con esquema estrella.
 
-El resultado: Chile solo representa el 30% de los turistas pero su recuperación post-COVID llegó al 85% de 2019 para 2023, mientras que Estados Unidos apenas alcanzó el 60%. El índice de estacionalidad muestra que diciembre tiene un 40% más de turistas que el promedio anual. Y la participación de mercado de los países fronterizos (Chile, Ecuador, Bolivia) subió del 52% al 61% post-COVID, señal de que la recuperación fue regional, no global.
+Analizando los datos descubrí que Chile solo representa el 30% de los turistas pero su recuperación post-COVID llegó al 85% de 2019 para 2023, mientras que Estados Unidos apenas alcanzó el 60%. El índice de estacionalidad muestra que diciembre tiene un 40% más de turistas que el promedio anual. Y la participación de mercado de los países fronterizos (Chile, Ecuador, Bolivia) subió del 52% al 61% post-COVID, señal de que la recuperación fue regional, no global.
 
 Si quieres ver los datos o tienes ideas sobre cómo conectar turismo con transporte o indicadores económicos, el código está acá.
-
-## Qué hace
-
-- Carga datos de arribo de turistas desde CSVs (exportaciones MINCETUR)
-- Limpieza: normaliza países, parsea números con comas, elimina duplicados
-- Calcula crecimiento interanual (YoY) por país
-- Genera índice de estacionalidad mensual
-- Calcula participación de mercado por país/año
-- Mide impacto COVID: caída 2020 vs promedio 2018-2019
-- Genera índice de recuperación post-COVID (base 2019)
-- Carga a warehouse SQLite con esquema estrella
 
 ## Instalación
 
@@ -108,7 +97,7 @@ I'm Gian Cruz. While reviewing MINCETUR statistics, I found they publish monthly
 
 What I built is a pipeline that loads that data, cleans it, calculates year-over-year growth by country, generates a monthly seasonality index, measures market share by country and year, and creates a COVID recovery index comparing each period against the 2019 baseline.
 
-The result: Chile accounts for 30% of tourists but its post-COVID recovery reached 85% of 2019 by 2023, while the US only hit 60%. December has 40% more tourists than the annual average. And border countries' (Chile, Ecuador, Bolivia) market share rose from 52% to 61% post-COVID, signaling regional, not global recovery.
+Digging into the data, Chile accounts for 30% of tourists but its post-COVID recovery reached 85% of 2019 by 2023, while the US only hit 60%. December has 40% more tourists than the annual average. And border countries' (Chile, Ecuador, Bolivia) market share rose from 52% to 61% post-COVID, signaling regional, not global recovery.
 
 If you want to see the data or have ideas about connecting tourism with transport or economic indicators, the code is right here.
 
